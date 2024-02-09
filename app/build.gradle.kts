@@ -64,6 +64,7 @@ dependencies {
     implementation(libs.androidx.material3)
 
     implementation(libs.androidx.room.ktx)
+    runtimeOnly(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
 
     testImplementation(libs.junit)
