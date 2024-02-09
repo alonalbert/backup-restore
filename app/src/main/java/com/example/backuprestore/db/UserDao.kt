@@ -6,6 +6,6 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 internal interface UserDao {
-    @Query("SELECT * FROM User")
-    fun observeAll(): Flow<List<User>>
+  @Query("SELECT * FROM User")
+  fun observeAll(): Flow<List<User>>
 }

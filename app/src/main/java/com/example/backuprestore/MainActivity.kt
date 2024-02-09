@@ -14,31 +14,31 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.backuprestore.ui.theme.BackupRestoreTheme
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            BackupRestoreTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    App(modifier = Modifier.padding(innerPadding))
-                }
-            }
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    enableEdgeToEdge()
+    setContent {
+      BackupRestoreTheme {
+        Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+          App(modifier = Modifier.padding(innerPadding))
         }
+      }
     }
+  }
 
-    @Composable
-    fun App(modifier: Modifier = Modifier) {
-        Text(
-            text = "Count",
-            modifier = modifier
-        )
-    }
+  @Composable
+  fun App(modifier: Modifier = Modifier) {
+    Text(
+      text = "Count",
+      modifier = modifier
+    )
+  }
 
-    @Preview(showBackground = true)
-    @Composable
-    fun GreetingPreview() {
-        BackupRestoreTheme {
-            App()
-        }
+  @Preview(showBackground = true)
+  @Composable
+  fun GreetingPreview() {
+    BackupRestoreTheme {
+      App()
     }
+  }
 }

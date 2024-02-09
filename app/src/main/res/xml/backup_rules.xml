@@ -6,5 +6,5 @@
    See https://developer.android.com/about/versions/12/backup-restore
 -->
 <full-backup-content>
-<!--   <include domain="sharedpref" path="file.txt"/>-->
+  <!--   <include domain="sharedpref" path="file.txt"/>-->
 </full-backup-content>
