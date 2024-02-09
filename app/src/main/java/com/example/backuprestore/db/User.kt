@@ -5,6 +5,8 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "User")
 internal data class User(
-  @PrimaryKey val id: Long = 0,
+  @PrimaryKey(autoGenerate = true) val id: Long = 0,
   val name: String = "",
-)
+) {
+  constructor(name: String) : this(id = 0, name)
+}
